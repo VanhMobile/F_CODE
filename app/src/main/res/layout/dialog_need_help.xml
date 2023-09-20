@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@drawable/bg_dialog_radius_15dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/confused" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Need Help?"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#285DF8"
+        android:fontFamily="@font/ubuntu_bold"/>
+    <TextView
+        android:id="@+id/messageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You don't remember your account?"
+        android:textSize="18sp"
+        android:textColor="#393838"
+        android:fontFamily="@font/ubuntu_bold"/>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:backgroundTint="@color/white"
+            app:strokeWidth="2dp"
+            app:strokeColor="#3A96E6"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            app:cornerRadius="10dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yes"
+            android:backgroundTint="#3A96E6"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:padding="8dp"
+            app:cornerRadius="10dp"/>
+    </LinearLayout>
+</LinearLayout>

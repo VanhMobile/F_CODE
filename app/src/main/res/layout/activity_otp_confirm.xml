@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF86C9"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".view.otpConfirm">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/f_code_logo"
+        android:layout_marginTop="130dp"/>
+
+
+    <com.chaos.view.PinView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:itemCount="6"
+        android:cursorVisible="true"
+        style="@style/PinWidget.PinView"
+        app:itemRadius="10dp"
+        android:itemBackground="@color/white"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:inputType="number"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOtpConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="#F64747"
+        android:padding="12dp"
+        android:text="Enter security code"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp" />
+
+
+</LinearLayout>

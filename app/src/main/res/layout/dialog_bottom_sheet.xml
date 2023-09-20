@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <View
+        android:layout_width="100dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Ảnh đại diện"
+        android:textColor="#179EE8"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvFolderImg"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chọn ảnh từ máy"
+        android:drawableStart="@drawable/image"
+        android:drawablePadding="20dp"
+        android:layout_marginLeft="13dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"/>
+</LinearLayout>

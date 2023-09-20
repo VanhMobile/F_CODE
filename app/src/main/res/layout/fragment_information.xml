@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.information.informationFragment">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_information" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgAvt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="3dp"
+            android:layout_gravity="center|bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/avt"
+            app:shapeAppearanceOverlay="@style/circle"
+            app:strokeColor="#6E9AF1"
+            app:strokeWidth="4dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Nguyễn Việt Anh"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/tvCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/schedule"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="18/05/2003"
+        android:textColor="#4A4A4A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/tvSex"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/sex"
+        android:drawablePadding="18dp"
+        android:gravity="center_vertical"
+        android:text="Nam"
+        android:textColor="#4A4A4A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCalendar"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/call"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="32dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="0984907397"
+        android:textColor="#4A4A4A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvSex"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/gmail"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="vanhcoder8386@gmail.com"
+        android:textColor="#4A4A4A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnUpdateInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#13C3EF"
+        android:text="cập nhập"
+        app:cornerRadius="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

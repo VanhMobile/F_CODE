@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/saveTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:gravity="end"
+        android:layout_marginRight="15dp"
+        android:textColor="#EF4907"
+        android:textSize="20sp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="Tiêu đề">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleNoteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+        android:hint="Nội dung">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contentNoteEditText"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
