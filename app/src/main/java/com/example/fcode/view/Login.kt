@@ -73,6 +73,7 @@ class Login : AppCompatActivity() {
         logInBinding.btnLoginWithGoogle.setOnClickListener {
             loginWithGoogle()
             // sửa thêm
+            // lần 2
         }
     }
 
